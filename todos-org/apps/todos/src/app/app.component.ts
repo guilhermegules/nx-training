@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from './services/api.service';
-import { Todo } from './interfaces/todo';
+import { Todo } from '@todos-org/data';
 import { Component } from '@angular/core';
 
 @Component({
