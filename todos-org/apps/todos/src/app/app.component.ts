@@ -1,3 +1,5 @@
+import { HttpClient } from '@angular/common/http';
+import { ApiService } from './services/api.service';
 import { Todo } from './interfaces/todo';
 import { Component } from '@angular/core';
 
@@ -9,9 +11,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   todos: Todo[] = [{ title: 'Learn Nx' }, { title: 'Learn RxJs' }];
 
+  constructor(private apiService: ApiService, private http: HttpClient) {}
+
+  fetchApi() {
+    this.apiService.fetchApi().subscribe(todo => (this.todos = todo));
+  }
+
   addTodo() {
-    this.todos.push({
-      title: `New todo ${Math.floor(Math.random() * 1000)} 🦈`
+    this.apiService.addTodo().subscribe(() => {
+      this.fetchApi();
     });
   }
 }
