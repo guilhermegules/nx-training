@@ -1,0 +1,13 @@
+ul {
+  width: 10em;
+  padding: 1em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgb(152, 32, 110);
+  li {
+    list-style: none;
+  }
+}

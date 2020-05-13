@@ -1,84 +1,25 @@
-# TodosOrg
+# Todos Org
 
 This project was generated using [Nx](https://nx.dev).
 
-<p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
+### This project was builded in get [started tutorial](https://nx.dev/angular/tutorial/01-create-application)
 
-🔎 **Nx is a set of Extensible Dev Tools for Monorepos.**
+🔎 **This project is for understand fundamentals of nx**
 
-## Quick Start & Documentation
+### Commands:
+- `npx create-nx-workspace@latest` create a new workspace;
+- `nx serve <application_name>` execute application;
+- `nx e2e <application_e2e> --watch` execute e2e test no browser;
+- `nx e2e todos-e2e --headless` execute tests in headless mode;
+- `nx g @nrwl/nest:app api --frontendProject=<app_name>` generate a nest application from a front end project;
+- `nx g @nrwl/workspace:lib <lib_name>` create a lib from your workspace;
+- `nx g @nrwl/angular:lib <lib_name>` create a lib from angular app;
+- `nx g component <component_name> --project=<lib_or_project_name>` if you need to add a component to a lib, add a flag `--export` in command;
+- `nx dep-graph` or `npm run dep-graph` to see application dependency graph;
+- `nx build <application_name>` build a project;
+- `nx run-many --target=build --projects=todos,api` building more then one application;
+- `nx lint todo --with-deps` execute a lint on application and your dependencies.
 
-[Nx Documentation](https://nx.dev/angular)
+### Application
 
-[10-minute video showing all Nx features](https://nx.dev/angular/getting-started/what-is-nx)
-
-[Interactive Tutorial](https://nx.dev/angular/tutorial/01-create-application)
-
-## Adding capabilities to your workspace
-
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
-
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
-
-Below are some plugins which you can add to your workspace:
-
-- [Angular](https://angular.io)
-  - `ng add @nrwl/angular`
-- [React](https://reactjs.org)
-  - `ng add @nrwl/react`
-- Web (no framework frontends)
-  - `ng add @nrwl/web`
-- [Nest](https://nestjs.com)
-  - `ng add @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `ng add @nrwl/express`
-- [Node](https://nodejs.org)
-  - `ng add @nrwl/node`
-
-## Generate an application
-
-Run `ng g @nrwl/angular:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `ng g @nrwl/angular:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are sharable across libraries and applications. They can be imported from `@todos-org/mylib`.
-
-## Development server
-
-Run `ng serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng g component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `ng build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `ng e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx dep-graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev/angular) to learn more.
+Todo app using angular
