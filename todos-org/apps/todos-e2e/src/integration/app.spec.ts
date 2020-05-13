@@ -1,4 +1,4 @@
-import { getTodos, getAddTodoButton } from './../support/app.po';
+import { getTodos, getAddTodoButton } from '../support/app.po';
 
 describe('TodosApps', () => {
   beforeEach(() => cy.visit('/'));
